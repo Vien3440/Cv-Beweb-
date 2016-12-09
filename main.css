@@ -1,0 +1,48 @@
+/***** Import *****/
+
+.titreSection{
+    margin-left: 50px;
+    font-size: 30px;
+}
+.titreArticle{
+    margin-left: 100px;
+    font-size: 20px;
+}
+.text{
+    margin-left: 150px;
+    font-size: 15px;
+}
+
+
+/***** Main_Css *****/
+
+body{
+    background-color: #EF5350;
+}
+
+header{
+    height: 100px;
+    padding: 10%;
+    background-color: #F44336;  
+    box-shadow: 0px 2px 5px black;
+}
+h1{
+ font-size: 50px   
+}
+
+/***** Section Exp *****/
+.xp{
+   background-color: #4CAF50; 
+   margin:50px;
+   
+}
+
+section > article {
+    color: gold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
