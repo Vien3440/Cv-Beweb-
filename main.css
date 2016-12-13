@@ -1,12 +1,38 @@
-/***** Import *****/
+/********* IMPORT *********/
 
 @font-face {
 font-family: "BananaYeti";
 src:url("BananaYeti.ttf");
 }
 
+body{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a0/Triangle_1_p6.svg);
+    background-attachment: fixed;
+    color: #fff;
+}
+
+header{
+    height: 80%;
+    padding: 10%;
+    box-shadow: 0px 2px 5px black;
+    background-color: #F44336;
+}
+
+h1{
+ font-size: 80px;
+ font-family: "BananaYeti";
+}
+
+section > article {
+    padding-top :20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
 .titreSection{
-    margin-left: 50px;
+
     font-size:40px;
     font-family: "BananaYeti";
 }
@@ -24,83 +50,120 @@ src:url("BananaYeti.ttf");
 background-color: #EF5350;
 }
 
+/****Pour les lien ***/
+a:link {
+   color: #fff;
+   background-color: transparent;
+   text-decoration: none;
+}
+a:visited {
+   color: #fff;
+   background-color: transparent;
+   text-decoration: none;
+}
+a:hover {
+   color: red;
+   background-color: transparent;
+   text-decoration: none;
+}
+a:active {
+   color: yellow;
+   background-color: transparent;
+   text-decoration: none;
+}
 
-/***** Main_Css *****/
+/***** NAV *****/
 
-body{
-    ;
-    color:#fff;
-
+nav{
+  position: fixed;
+      width: 100%;
+      padding: 15px;
+      background-color: rgba(255, 173, 117, 0.91);
 
 }
 
-header{
-    height: 80%;
-    padding: 10%;
-    background-color: #F44336;
-    box-shadow: 0px 2px 5px black;
-}
-h1{
- font-size: 80px;
+nav>ul{
+ display: flex;
+ justify-content: space-around;
  font-family: "BananaYeti";
+ font-size: 30px;
 }
-
 /***** Section Exp *****/
 .xp{
-  height:200px;
-
-   border: 1px solid  rgba(0, 0, 0, 0.41) ;
+   height:70%;
    margin:50px;
-   text-align: center;
    padding: 10px;
+   border: 1px solid  rgba(0, 0, 0, 0.41) ;
    box-shadow: 5px 5px 5px black;
-
+   text-align: center;
 }
 
 .xp > .titreSection{
-text-align: center;
-
+  text-align: center;
 }
 
-section > article {
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top :20px;
-}
 
 
 /***** Section Projet *****/
 .projet{
-  height:70px;
+   height: 130px;
+   padding: 10px;
    border: 1px solid  rgba(0, 0, 0, 0.41) ;
    text-align: center;
-   padding: 10px;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
-       height: 130px;
+
+}
+
+.projet:hover{
+  -webkit-animation: mymove 5s infinite;
+  animation:  5s infinite;
+  -webkit-animation: myfirst 0.5s infinite;
+  animation: myfirst  0.5s infinite;
+
 }
 
 .diplome{
-  height:70px;
+   height: 130px;
+   padding: 10px;
    border: 1px solid  rgba(0, 0, 0, 0.41) ;
    text-align: center;
-   padding: 10px;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
-       height: 130px;
+
+}
+
+.diplome:hover{
+  -webkit-animation: mymove 5s infinite;
+  animation:  5s infinite;
+  -webkit-animation: myfirst 0.5s infinite;
+  animation: myfirst  0.5s infinite;
+  
 }
 
 .loisir{
-  height:70px;
+   height: 130px;
+   padding: 10px;
    border: 1px solid  rgba(0, 0, 0, 0.41) ;
    text-align: center;
-   padding: 10px;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
-       height: 130px;
+}
+
+.loisir:hover{
+  -webkit-animation: myfirst 0.5s infinite;
+  animation: myfirst  0.5s infinite;
+
+}
+
+@keyframes myfirst {
+    0%   {background: red;opacity: 1}
+    25%  {background: yellow;opacity: 0.8 }
+    50%  {background: blue;opacity:0.4 }
+    75%  {background: green;opacity:0.8 }
+    100% {background: red;opacity:0.9}
 }
