@@ -5,25 +5,25 @@ font-family: "BananaYeti";
 src:url("BananaYeti.ttf");
 }
 
-body{
+body{       /* ajoute une image fixe au background de la page */
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a0/Triangle_1_p6.svg);
     background-attachment: fixed;
     color: #fff;
 }
 
-header{
-    height: 80%;
+header{     /* ajoute du padding, une ombre et une couleur de background au header */
+    height: 50%;
     padding: 10%;
     box-shadow: 0px 2px 5px black;
     background-color: #F44336;
 }
 
-h1{
+h1{    /* définit la police du titre (développeur web) */
  font-size: 80px;
  font-family: "BananaYeti";
 }
 
-section > article {
+section > article { /* applique à tous les éléments article dont le parent est un élément séction du padding */
     padding-top :20px;
     display: flex;
     flex-direction: row;
@@ -31,42 +31,40 @@ section > article {
 
 }
 
-.titreSection{
-
+.titreSection{  /* Définit la police du titre de chaque section (projet, diplome, etc. */
     font-size:40px;
     font-family: "BananaYeti";
 }
-.titreArticle{
+.titreArticle{  /* Définit la police du titre de chaque article de la partie experience */
     margin-left: 100px;
     font-size: 20px;
 }
-.text{
+.text{   /* Définit la police de texte du contenu de chaque article de la partie experience */
     margin-left: 150px;
     font-size: 15px;
 }
 
-
-.colorSecion{
+.colorSecion{   /* Définit la couleur du background des articles et des sections */
 background-color: #EF5350;
 }
 
 /****Pour les lien ***/
-a:link {
+a:link {    /* définit la couleur des liens du header, leur background et enlève leur soulignage */
    color: #fff;
    background-color: transparent;
    text-decoration: none;
 }
-a:visited {
+a:visited {    /* s'assure que le style des liens reste le même après clic */
    color: #fff;
    background-color: transparent;
    text-decoration: none;
 }
-a:hover {
+a:hover {   /* change la couleur des liens en rouge en survol */
    color: red;
    background-color: transparent;
    text-decoration: none;
 }
-a:active {
+a:active {     /* change la couleur des liens en jaune pendant le clic */
    color: yellow;
    background-color: transparent;
    text-decoration: none;
@@ -74,7 +72,7 @@ a:active {
 
 /***** NAV *****/
 
-nav{
+nav{    /* fixe la navbar en haut de la page, lui ajoute du padding, définit sa couleur, s'assure qu'elle prend la largeur complète de la page */
   position: fixed;
       width: 100%;
       padding: 15px;
@@ -82,12 +80,13 @@ nav{
 
 }
 
-nav>ul{
+nav>ul{     /* définit la police de la navbar */
  display: flex;
  justify-content: space-around;
  font-family: "BananaYeti";
  font-size: 30px;
 }
+
 /***** Section Exp *****/
 .xp{
    height:70%;
@@ -101,9 +100,6 @@ nav>ul{
 .xp > .titreSection{
   text-align: center;
 }
-
-
-
 
 /***** Section Projet *****/
 .projet{
@@ -125,6 +121,7 @@ nav>ul{
 
 }
 
+/***** Section Diplome *****/
 .diplome{
    height: 130px;
    padding: 10px;
@@ -144,6 +141,7 @@ nav>ul{
   
 }
 
+/***** Section Loisir *****/
 .loisir{
    height: 130px;
    padding: 10px;
