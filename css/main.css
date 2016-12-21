@@ -1,0 +1,80 @@
+.jumbotron {
+  padding-top: 0%;
+  padding-bottom: 0%; }
+  .jumbotron header {
+    padding: 8.58%;
+    box-shadow: 0px 2px 5px black;
+    background-color: #F44336; }
+    .jumbotron header h1 {
+      font-size: 5.6em;
+      font-family: Bananayeti; }
+
+.navbar-default {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 173, 117, 0.91);
+  height: 60px;
+  text-decoration: none; }
+  .navbar-default a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 13%;
+    font-family: Bananayeti;
+    font-size: 2.2em; }
+    .navbar-default a:hover {
+      color: red; }
+    .navbar-default a:active {
+      color: yellow; }
+
+section {
+  background-color: #EF5350;
+  border: 1px solid rgba(0, 0, 0, 0.41); }
+  section h2 {
+    font-size: 2.9em;
+    font-family: Bananayeti;
+    text-align: center; }
+  section p {
+    font-family: Times New Roman;
+    text-align: center;
+    font-size: 1.3em; }
+  section article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    section article h4 {
+      font-size: 1.7em;
+      font-family: Times New Roman; }
+
+section[class="col-xs-12 col-lg-10 col-lg-offset-1"] {
+  margin-bottom: 3.6%;
+  box-shadow: 5px 5px 5px black; }
+
+section[class="col-lg-12"]:hover {
+  -webkit-animation: myfirst 0.5s infinite;
+  animation: myfirst  0.5s infinite; }
+
+@font-face {
+  font-family: "BananaYeti";
+  src: url("../fonts/BananaYeti.ttf"); }
+@keyframes myfirst {
+  0% {
+    background: red;
+    opacity: 1; }
+  25% {
+    background: yellow;
+    opacity: 0.8; }
+  50% {
+    background: blue;
+    opacity: 0.4; }
+  75% {
+    background: green;
+    opacity: 0.8; }
+  100% {
+    background: red;
+    opacity: 0.9; } }
+body {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a0/Triangle_1_p6.svg);
+  background-attachment: fixed;
+  color: #fff; }
+
+/*# sourceMappingURL=main.css.map */

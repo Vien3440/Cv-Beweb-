@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'header';
+@import 'navbar';
+@import 'sections';
+
+@font-face {
+font-family: "BananaYeti"; 
+src:url("../fonts/BananaYeti.ttf");
+}
+
+@keyframes myfirst {
+    0%   {background: red;opacity: 1}
+    25%  {background: yellow;opacity: 0.8 }
+    50%  {background: blue;opacity:0.4 }
+    75%  {background: green;opacity:0.8 }
+    100% {background: red;opacity:0.9}
+}
+
+body{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a0/Triangle_1_p6.svg);
+    background-attachment: fixed;
+    color: #fff;
+}
