@@ -1,0 +1,95 @@
+/***** Section Exp *****/
+
+.xp {
+    height: 70%;
+    margin: 50px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.41);
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+}
+
+.xp>.titreSection {
+    text-align: center;
+}
+
+
+/***** Section Projet *****/
+
+.projet {
+    height: 130px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.41);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.projet:hover {
+    -webkit-animation: mymove 5s infinite;
+    animation: 5s infinite;
+    -webkit-animation: myfirst 0.5s infinite;
+    animation: myfirst 0.5s infinite;
+}
+
+
+/***** Section Diplome *****/
+
+.diplome {
+    height: 130px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.41);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.diplome:hover {
+    -webkit-animation: mymove 5s infinite;
+    animation: 5s infinite;
+    -webkit-animation: myfirst 0.5s infinite;
+    animation: myfirst 0.5s infinite;
+}
+
+
+/***** Section Loisir *****/
+
+.loisir {
+    height: 130px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.41);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.loisir:hover {
+    -webkit-animation: myfirst 0.5s infinite;
+    animation: myfirst 0.5s infinite;
+}
+
+@keyframes myfirst {
+    0% {
+        background: red;
+        opacity: 1
+    }
+    25% {
+        background: yellow;
+        opacity: 0.8
+    }
+    50% {
+        background: blue;
+        opacity: 0.4
+    }
+    75% {
+        background: green;
+        opacity: 0.8
+    }
+    100% {
+        background: red;
+        opacity: 0.9
+    }
+}

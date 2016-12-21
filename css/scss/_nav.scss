@@ -1,0 +1,17 @@
+/***** NAV *****/
+
+nav {
+    /* fixe la navbar en haut de la page, lui ajoute du padding, définit sa couleur, s'assure qu'elle prend la largeur complète de la page */
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(255, 173, 117, 0.91);
+}
+
+nav>ul {
+    /* définit la police de la navbar */
+    display: flex;
+    justify-content: space-around;
+    font-family: "BananaYeti";
+    font-size: 30px;
+}

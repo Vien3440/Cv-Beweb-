@@ -1,167 +1,165 @@
+@charset "UTF-8";
 /********* IMPORT *********/
-
 @font-face {
-font-family: "BananaYeti";
-src:url("BananaYeti.ttf");
-}
+  font-family: "BananaYeti";
+  src: url("BananaYeti.ttf"); }
+body {
+  /* ajoute une image fixe au background de la page */
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a0/Triangle_1_p6.svg);
+  background-attachment: fixed;
+  color: #fff; }
 
-body{       /* ajoute une image fixe au background de la page */
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a0/Triangle_1_p6.svg);
-    background-attachment: fixed;
-    color: #fff;
-}
+header {
+  /* ajoute du padding, une ombre et une couleur de background au header */
+  height: 50%;
+  padding: 10%;
+  box-shadow: 0px 2px 5px black;
+  background-color: #F44336; }
 
-header{     /* ajoute du padding, une ombre et une couleur de background au header */
-    height: 50%;
-    padding: 10%;
-    box-shadow: 0px 2px 5px black;
-    background-color: #F44336;
-}
+h1 {
+  /* définit la police du titre (développeur web) */
+  font-size: 80px;
+  font-family: "BananaYeti"; }
 
-h1{    /* définit la police du titre (développeur web) */
- font-size: 80px;
- font-family: "BananaYeti";
-}
+section > article {
+  /* applique à tous les éléments article dont le parent est un élément séction du padding */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
 
-section > article { /* applique à tous les éléments article dont le parent est un élément séction du padding */
-    padding-top :20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.titreSection {
+  /* Définit la police du titre de chaque section (projet, diplome, etc. */
+  font-size: 40px;
+  font-family: "BananaYeti"; }
 
-}
+.titreArticle {
+  /* Définit la police du titre de chaque article de la partie experience */
+  margin-left: 100px;
+  font-size: 20px; }
 
-.titreSection{  /* Définit la police du titre de chaque section (projet, diplome, etc. */
-    font-size:40px;
-    font-family: "BananaYeti";
-}
-.titreArticle{  /* Définit la police du titre de chaque article de la partie experience */
-    margin-left: 100px;
-    font-size: 20px;
-}
-.text{   /* Définit la police de texte du contenu de chaque article de la partie experience */
-    margin-left: 150px;
-    font-size: 15px;
-}
+.text {
+  /* Définit la police de texte du contenu de chaque article de la partie experience */
+  margin-left: 150px;
+  font-size: 15px; }
 
-.colorSecion{   /* Définit la couleur du background des articles et des sections */
-background-color: #EF5350;
-}
+.colorSecion {
+  /* Définit la couleur du background des articles et des sections */
+  background-color: #EF5350; }
 
 /****Pour les lien ***/
-a:link {    /* définit la couleur des liens du header, leur background et enlève leur soulignage */
-   color: #fff;
-   background-color: transparent;
-   text-decoration: none;
-}
-a:visited {    /* s'assure que le style des liens reste le même après clic */
-   color: #fff;
-   background-color: transparent;
-   text-decoration: none;
-}
-a:hover {   /* change la couleur des liens en rouge en survol */
-   color: red;
-   background-color: transparent;
-   text-decoration: none;
-}
-a:active {     /* change la couleur des liens en jaune pendant le clic */
-   color: yellow;
-   background-color: transparent;
-   text-decoration: none;
-}
+a:link {
+  /* définit la couleur des liens du header, leur background et enlève leur soulignage */
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none; }
+
+a:visited {
+  /* s'assure que le style des liens reste le même après clic */
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none; }
+
+a:hover {
+  /* change la couleur des liens en rouge en survol */
+  color: red;
+  background-color: transparent;
+  text-decoration: none; }
+
+a:active {
+  /* change la couleur des liens en jaune pendant le clic */
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none; }
 
 /***** NAV *****/
-
-nav{    /* fixe la navbar en haut de la page, lui ajoute du padding, définit sa couleur, s'assure qu'elle prend la largeur complète de la page */
+nav {
+  /* fixe la navbar en haut de la page, lui ajoute du padding, définit sa couleur, s'assure qu'elle prend la largeur complète de la page */
   position: fixed;
-      width: 100%;
-      padding: 15px;
-      background-color: rgba(255, 173, 117, 0.91);
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(255, 173, 117, 0.91); }
 
-}
-
-nav>ul{     /* définit la police de la navbar */
- display: flex;
- justify-content: space-around;
- font-family: "BananaYeti";
- font-size: 30px;
-}
+nav > ul {
+  /* définit la police de la navbar */
+  display: flex;
+  justify-content: space-around;
+  font-family: "BananaYeti";
+  font-size: 30px; }
 
 /***** Section Exp *****/
-.xp{
-   height:70%;
-   margin:50px;
-   padding: 10px;
-   border: 1px solid  rgba(0, 0, 0, 0.41) ;
-   box-shadow: 5px 5px 5px black;
-   text-align: center;
-}
+.xp {
+  height: 70%;
+  margin: 50px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.41);
+  box-shadow: 5px 5px 5px black;
+  text-align: center; }
 
-.xp > .titreSection{
-  text-align: center;
-}
+.xp > .titreSection {
+  text-align: center; }
 
 /***** Section Projet *****/
-.projet{
-   height: 130px;
-   padding: 10px;
-   border: 1px solid  rgba(0, 0, 0, 0.41) ;
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
+.projet {
+  height: 130px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.41);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
 
-}
-
-.projet:hover{
+.projet:hover {
   -webkit-animation: mymove 5s infinite;
-  animation:  5s infinite;
+  animation: 5s infinite;
   -webkit-animation: myfirst 0.5s infinite;
-  animation: myfirst  0.5s infinite;
-
-}
+  animation: myfirst 0.5s infinite; }
 
 /***** Section Diplome *****/
-.diplome{
-   height: 130px;
-   padding: 10px;
-   border: 1px solid  rgba(0, 0, 0, 0.41) ;
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
+.diplome {
+  height: 130px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.41);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
 
-}
-
-.diplome:hover{
+.diplome:hover {
   -webkit-animation: mymove 5s infinite;
-  animation:  5s infinite;
+  animation: 5s infinite;
   -webkit-animation: myfirst 0.5s infinite;
-  animation: myfirst  0.5s infinite;
-  
-}
+  animation: myfirst 0.5s infinite; }
 
 /***** Section Loisir *****/
-.loisir{
-   height: 130px;
-   padding: 10px;
-   border: 1px solid  rgba(0, 0, 0, 0.41) ;
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-}
+.loisir {
+  height: 130px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.41);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
 
-.loisir:hover{
+.loisir:hover {
   -webkit-animation: myfirst 0.5s infinite;
-  animation: myfirst  0.5s infinite;
-
-}
+  animation: myfirst 0.5s infinite; }
 
 @keyframes myfirst {
-    0%   {background: red;opacity: 1}
-    25%  {background: yellow;opacity: 0.8 }
-    50%  {background: blue;opacity:0.4 }
-    75%  {background: green;opacity:0.8 }
-    100% {background: red;opacity:0.9}
-}
+  0% {
+    background: red;
+    opacity: 1; }
+  25% {
+    background: yellow;
+    opacity: 0.8; }
+  50% {
+    background: blue;
+    opacity: 0.4; }
+  75% {
+    background: green;
+    opacity: 0.8; }
+  100% {
+    background: red;
+    opacity: 0.9; } }
+
+/*# sourceMappingURL=main.css.map */
