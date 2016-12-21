@@ -1,23 +1,44 @@
-/********* IMPORT *********/
 
+/*links the font BananaYeti to the document*/
 @font-face {
-font-family: "BananaYeti";
+font-family: "BananaYeti"; 
 src:url("BananaYeti.ttf");
 }
 
+<<<<<<< HEAD:css/main (copie).css
 body{       /* ajoute une image fixe au background de la page */
+=======
+/*sets a fixed background image*/
+body{
+>>>>>>> b9fdfe840a30b196ce5e619fbde3969bcbc19f23:main.css
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a0/Triangle_1_p6.svg);
     background-attachment: fixed;
     color: #fff;
 }
 
+<<<<<<< HEAD:css/main (copie).css
 header{     /* ajoute du padding, une ombre et une couleur de background au header */
     height: 50%;
     padding: 10%;
+=======
+/***** HEADER *****/
+
+/*removes the padding at the top and bottom of the bootstrap jumbotron*/
+.jumbotron {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    
+}
+
+/*gives the jumbotron a pink color, a shadow and resizes it*/
+.jumbotron > header {
+    padding: 8.58%;
+>>>>>>> b9fdfe840a30b196ce5e619fbde3969bcbc19f23:main.css
     box-shadow: 0px 2px 5px black;
     background-color: #F44336;
 }
 
+<<<<<<< HEAD:css/main (copie).css
 h1{    /* définit la police du titre (développeur web) */
  font-size: 80px;
  font-family: "BananaYeti";
@@ -25,12 +46,26 @@ h1{    /* définit la police du titre (développeur web) */
 
 section > article { /* applique à tous les éléments article dont le parent est un élément séction du padding */
     padding-top :20px;
+=======
+/*applies the BananaYeti font to the main title and resizes it*/
+.jumbotron > header > h1 {
+ font-size: 5.6em;
+ font-family: "BananaYeti";
+}
+
+/***** NAVBAR *****/
+
+/*sets the size and color of the navbar, ensures that the links within the navbar are evenly spaced and spread across the width of the screen*/
+.navbar-default {
+>>>>>>> b9fdfe840a30b196ce5e619fbde3969bcbc19f23:main.css
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+    background-color: rgba(255, 173, 117, 0.91);
+    height: 60px;
 
 }
 
+<<<<<<< HEAD:css/main (copie).css
 .titreSection{  /* Définit la police du titre de chaque section (projet, diplome, etc. */
     font-size:40px;
     font-family: "BananaYeti";
@@ -65,11 +100,32 @@ a:hover {   /* change la couleur des liens en rouge en survol */
    text-decoration: none;
 }
 a:active {     /* change la couleur des liens en jaune pendant le clic */
+=======
+/* sets the font of the links, their size and color, removes the underlines and moves them sightly down*/
+.navbar-default  > a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 13%;
+    font-family: "BananaYeti";
+    font-size: 2.2em;
+
+}
+
+/*changes the color of the links on hover*/
+.navbar-default > a:hover {
+    color: red;
+    text-decoration: none;
+    
+}
+
+/*changes the color of the links on click*/
+.navbar-default > a:active {
+>>>>>>> b9fdfe840a30b196ce5e619fbde3969bcbc19f23:main.css
    color: yellow;
-   background-color: transparent;
    text-decoration: none;
 }
 
+<<<<<<< HEAD:css/main (copie).css
 /***** NAV *****/
 
 nav{    /* fixe la navbar en haut de la page, lui ajoute du padding, définit sa couleur, s'assure qu'elle prend la largeur complète de la page */
@@ -77,9 +133,18 @@ nav{    /* fixe la navbar en haut de la page, lui ajoute du padding, définit sa
       width: 100%;
       padding: 15px;
       background-color: rgba(255, 173, 117, 0.91);
+=======
+/***** SECTIONS *****/
+>>>>>>> b9fdfe840a30b196ce5e619fbde3969bcbc19f23:main.css
 
+/*gives every section (exp, forma, diplome, loisir) a background color and a thin black border*/
+section {
+    background-color:#EF5350; 
+    border: 1px solid rgba(0, 0, 0, 0.41);
+    
 }
 
+<<<<<<< HEAD:css/main (copie).css
 nav>ul{     /* définit la police de la navbar */
  display: flex;
  justify-content: space-around;
@@ -111,16 +176,23 @@ nav>ul{     /* définit la police de la navbar */
    flex-direction: column;
    justify-content: space-around;
 
+=======
+/*gives the first section (the only one that has thoses exact classes applied to it) a bottom margin and a shadow*/
+section[class="col-xs-12 col-lg-10 col-lg-offset-1"] {
+    margin-bottom: 3.6%;
+    box-shadow: 5px 5px 5px black;
+    
+>>>>>>> b9fdfe840a30b196ce5e619fbde3969bcbc19f23:main.css
 }
 
-.projet:hover{
-  -webkit-animation: mymove 5s infinite;
-  animation:  5s infinite;
-  -webkit-animation: myfirst 0.5s infinite;
-  animation: myfirst  0.5s infinite;
-
+/*gives the three next sections an animation of flashing colors on hover*/
+section[class="col-lg-12"]:hover {
+    -webkit-animation: myfirst 0.5s infinite;
+    animation: myfirst  0.5s infinite;
+    
 }
 
+<<<<<<< HEAD:css/main (copie).css
 /***** Section Diplome *****/
 .diplome{
    height: 130px;
@@ -131,16 +203,24 @@ nav>ul{     /* définit la police de la navbar */
    flex-direction: column;
    justify-content: space-around;
 
+=======
+/*changes the font of the title of each section and centers it*/
+section > h2 {
+    font-size: 2.9em;
+    font-family: "BananaYeti";
+    text-align: center;
+    
+>>>>>>> b9fdfe840a30b196ce5e619fbde3969bcbc19f23:main.css
 }
 
-.diplome:hover{
-  -webkit-animation: mymove 5s infinite;
-  animation:  5s infinite;
-  -webkit-animation: myfirst 0.5s infinite;
-  animation: myfirst  0.5s infinite;
-  
+/*changes the font of the subtitle of the first section*/
+article > h4 {
+    font-size: 1.7em;
+    font-family: "Times New Roman";
+    
 }
 
+<<<<<<< HEAD:css/main (copie).css
 /***** Section Loisir *****/
 .loisir{
    height: 130px;
@@ -150,14 +230,25 @@ nav>ul{     /* définit la police de la navbar */
    display: flex;
    flex-direction: column;
    justify-content: space-around;
+=======
+/*changes the font of the text of each section and centers it*/
+section p {
+    font-family: "Times New Roman";
+    text-align: center;
+    font-size: 1.3em;
+    
+>>>>>>> b9fdfe840a30b196ce5e619fbde3969bcbc19f23:main.css
 }
 
-.loisir:hover{
-  -webkit-animation: myfirst 0.5s infinite;
-  animation: myfirst  0.5s infinite;
+/*changes the contents of the first section to be aligned on a single line and evenly spaced*/
+section > article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
 }
 
+/*configures the animation of flashing colors*/
 @keyframes myfirst {
     0%   {background: red;opacity: 1}
     25%  {background: yellow;opacity: 0.8 }
